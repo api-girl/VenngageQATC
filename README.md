@@ -23,4 +23,4 @@ I am trying to follow the official Selenium contributors community advices in my
 2. I would run the test inside a for loop with a counter set to loop 100 times (int i = 0, i < 100, i++)
 
 ### What else would you verify to make sure that the account has signed up successfully?
-I would check if a venngage_sid cookie is saved to confirm that a session was successfully created.
+I would check if a venngage_sid cookie is saved after the sign up to confirm that a session was successfully created.
