@@ -21,6 +21,7 @@ public class SignUpPage {
 		selenium.sendKeys(emailInput, account.getEmail());
 		selenium.sendKeys(passwordInput, account.getPassword());
 		selenium.clickByXpath(signUpButton);
+		selenium.waitUntilPageTitleContainsString("Survey");
 		return new OnboardingFirstStep();
 	}
 	

@@ -1,3 +1,4 @@
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,6 @@ public class TestSignUp {
 		selenium = new Selenium();
 		templates = new TemplatesPage();
 		account = new Account();
-		signUpPage = new SignUpPage();
 
 		selenium.goToUrl("http://venngage.com/templates");
 	}
@@ -29,5 +29,10 @@ public class TestSignUp {
 
 		assertTrue(onboarding.getPageTitle().contains("Venngage | Survey"));
 		assertTrue(onboarding.getWelcomeMessage().contains(account.getFirstName()));
+	}
+
+	@AfterMethod
+	public void closeBrowser(){
+		selenium.quitChrome();
 	}
 }
