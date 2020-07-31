@@ -6,7 +6,7 @@ import static org.testng.Assert.assertTrue;
 public class TestSignUp {
 	private Selenium selenium;
 	private Account account;
-	private IndividualTemplatesPage templates;
+	private TemplatesPage templates;
 	private SignUpPage signUpPage;
 	private OnboardingFirstStep onboarding;
 	
@@ -14,6 +14,7 @@ public class TestSignUp {
 	public void setUp(){
 		// Instantiate page objects here
 		selenium = new Selenium();
+		templates = new TemplatesPage();
 		account = new Account();
 		signUpPage = new SignUpPage();
 
