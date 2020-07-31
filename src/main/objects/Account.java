@@ -13,14 +13,14 @@ public class Account {
 	 **/
 
 	public Account(){
-//		this.firstName = "QA";
-//		this.lastName = "Test";
-//		this.email = "qa.nevena@venngage.com";
-//		this.password = "123456";
-		this.firstName = "proba";
-		this.lastName = "probic";
-		this.email = "proba@yopmail.com";
+		this.firstName = "QA";
+		this.lastName = "Test";
+		this.email = "qa.nevena@venngage.com";
 		this.password = "123456";
+//		this.firstName = "proba";
+//		this.lastName = "probic";
+//		this.email = "proba@yopmail.com";
+//		this.password = "123456";
 	}
 
 	// Create the necessary Getter functions
