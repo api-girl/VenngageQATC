@@ -20,7 +20,7 @@ I am trying to follow the official Selenium contributors community advices in my
 
 ### If you had to run the Sign Up test flow 100 times, each using a different email, what would you do to run the test efficiently?
 1. I would create a Java method for generating random e-mail addresses that would feed the test
-2. I would run the test inside a for loop with a counter set to loop 100 times (int i = 0, i < 100, i++)
+2. I would run the test inside a for loop with a counter set to loop 100 times (int i = 0, i < 100, i++) ----> data-driven approach instead of a loop
 
 ### What else would you verify to make sure that the account has signed up successfully?
 I would check if a venngage_sid cookie is saved after the sign up to confirm that a session was successfully created.
